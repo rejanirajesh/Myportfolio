@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charsret="utf-8">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="s1.css"rel="stylesheet"type="text/css" />
 		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
 	.topnav{
 		overflow: hidden;
 		background-color: #000;
-		style-type:none;
+		
 		display: flex;
 		margin: 0 0vw;
 		
@@ -78,21 +78,28 @@
 }
 	</style>
 	<body>
-	<nav>
-		<div class="logo">
-		  <h4>Rejani Rajesh</h4>
-		</div>
-
-  	<ul class="topnav" id="nav-links">
-      <a href="#Home">Home</a>
-      <a href="#About">About</a>
-      <a href="#Achievements">Achievements</a>
-      <a href="#Contact">Contact</a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-	 			<i class="fa fa-bars"></i>
- 			</a>
-  </ul>
-</nav>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Rejani Rajesh</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			  <ul class="navbar-nav">
+				<li class="nav-item active">
+				  <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#About">About</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#Ach">Achievements</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#con">Contact</a>
+				</li>
+			  </ul>
+			</div>
+		  </nav>
 	<div class="pic1" id="Home">
 		<div class="ptext">
 			<span class="border">
@@ -113,27 +120,40 @@
 		</div>
 
 		<section class="section About">
-			<div style="overflow:hidden;width:100%">
-				<img src="/images/pic5.jpeg" alt="" style="float:right" hspace="80">
-				<p>
-					<div class="container grid">
-  					<div class="item">Rejani Rajesh</div>
-  					<div class="item">29 June 2000</div>
-  					<div class="item">Computer Science</div>
-						<div class="item">FISAT</div>
-					</div>
-				</p>
+			<div style="width:100%;">
+				<img src="pic5.jpeg" class="img-thumbnail">
+				<h5 style="padding-top:20px;align-self: start;">
+					Rejani Rajesh
+				</h5>
+				<h5>
+					<li></li>
+					29 June 2000
+				</h5>
+				<h5>
+					<li></li>
+					Computer Science
+				</h5>
+				<h5>
+					<li></li>
+					FISAT
+				</h5>
 			</div>
 		</section>
 
-		<a name="ACHIEVEMENTS" id="Achievements"></a>
-		<div class="pic3">
-			<div class="ptext">
+		
+		<div class="pic3" id="Ach">
+			<div class="container" style="width: max-content;">
+				<div class="row">
+				  <div class="col" style="text-align: center;color:white;font-size: 27px;letter-spacing: 5px;padding-top: 50%;">
 				<span class="border trans">
 					ACHIEVEMENTS
-				</span>
+				</span>	
+			
 			</div>
 		</div>
+		</div>
+		</div>
+
 
 		<section class="section Achievements"><p>
 				<dl>
@@ -151,17 +171,28 @@
 			</p>
 		</section>
 
-		<a name="CONTACT" id="Contact"></a>
+		<a name="CONTACT" id="con"></a>
 		<div class="pic4">
 			<div class="ptext">
 				<span class="border ">
 					CONTACT
 				</span>
+
+				<div class="container" style="width:max-content;">
+					<div class="row">
+					  <div class="col">
+						<h4 style="padding-top: 15%;color: #000; font-size: 20px;letter-spacing:1px;">
+							rejani2906@gmail.com
+						</h4>
+					  </div>
+					  
+					</div>
+				  </div>
+			
 			</div>
-			<p class="email">
-				<image src='/images/mail.png'>
-					&nbsp;&nbsp;rejani2906@gmail.com
-					<br>
+			
+				
+			
 			</p>
 
 		</div>
@@ -169,9 +200,9 @@
 		<section id="footer">
 			<p>
 				<ul class="social-icons">
-    			<li><a href="https://www.twitter.com/rejani2906"><img src='/images/Twitter.png' /></a></li>
-    			<li><a href="https://github.com/rejanirajesh"><img src='/images/Github.png' /></a></li>
-					<li><a href="https://www.linkedin.com/in/rejani-rajesh-36335217a/"><img src='/images/Linkedin.png' /></a></li>
+    			<li><a href="https://www.twitter.com/rejani2906"><img src='Twitter.png' /></a></li>
+    			<li><a href="https://github.com/rejanirajesh"><img src='Github.png' /></a></li>
+					<li><a href="https://www.linkedin.com/in/rejani-rajesh-36335217a/"><img src='Linkedin.png' /></a></li>
 				</ul>
 			</p>
 		</section>
@@ -185,8 +216,9 @@
     		x.className = "topnav";
   		}
 }
-</script>
 
+</script>
+<script src="my.js"></script>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
